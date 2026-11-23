@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <title>OMG — Portfolio</title>
+  <meta name="description" content="Independent game developer portfolio featuring games, assets and tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="developer-name" href="#" aria-label="Return to home">OWLMA GAMES & ASSETS & TOOLS</a>
+  </header>
+
+  <main class="stage" id="stage">
+    <section class="panel panel-games" id="gamesPanel" aria-label="Games portfolio">
+      <div class="panel-content">
+        <div class="section-heading">
+          <span class="eyebrow">SELECTED WORK</span>
+          <h1>Games<span class="accent-dot">.</span></h1>
+          <p>A collection of games and experiments.</p>
+        </div>
+        <div class="card-grid" id="gamesGrid"></div>
+      </div>
+    </section>
+
+    <section class="panel panel-assets" id="assetsPanel" aria-label="Assets and tools portfolio">
+      <div class="panel-content">
+        <div class="section-heading">
+          <span class="eyebrow">MADE FOR CREATORS</span>
+          <h1>Assets <span class="amp">&</span> Tools<span class="dark-dot">.</span></h1>
+          <p>Tools, systems and assets for game development.</p>
+        </div>
+        <div class="card-grid" id="assetsGrid"></div>
+      </div>
+    </section>
+
+    <div class="home-ui" id="homeUI">
+      <button class="side-choice games-choice" id="openGames" type="button">
+        GAMES
+      </button>
+
+      <button class="logo-button" id="homeLogo" type="button" aria-label="Return to home">
+        <img src="assets/home/dev icon 2.png" alt="Developer logo">
+      </button>
+
+      <button class="side-choice assets-choice" id="openAssets" type="button">
+        ASSETS &amp; TOOLS
+      </button>
+    </div>
+
+    <button class="return-strip return-games" id="returnFromGames" type="button" aria-label="Return to home">
+      <span>BACK</span><span>↗</span>
+    </button>
+    <button class="return-strip return-assets" id="returnFromAssets" type="button" aria-label="Return to home">
+      <span>BACK</span><span>↗</span>
+    </button>
+  </main>
+
+  <footer class="footer">
+    <span>INDEPENDENT DEVELOPER</span>
+    <span>© <span id="year"></span> DEVELOPER NAME</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
